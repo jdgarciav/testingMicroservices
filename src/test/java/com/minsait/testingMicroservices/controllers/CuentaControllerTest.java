@@ -220,20 +220,4 @@ class CuentaControllerTest {
                 );
 
     }
-/*
-    @Test
-    void testRetirarConSaldo() throws Exception{
-        BigDecimal monto = new BigDecimal(500);
-        Cuenta cuenta = Datos.crearCuenta1().get();
-        cuenta.retirar(monto);
-
-        mvc.perform(put(uri).contentType(MediaType.APPLICATION_JSON))
-                .andExpectAll(
-                        (ResultMatcher) jsonPath("500",cuenta.getSaldo().toString())
-                );
-
-    }
-
- */
-
 }

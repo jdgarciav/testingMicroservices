@@ -4,7 +4,6 @@ import com.minsait.testingMicroservices.models.Banco;
 import com.minsait.testingMicroservices.models.Cuenta;
 import com.minsait.testingMicroservices.repositories.BancoRepository;
 import com.minsait.testingMicroservices.repositories.CuentaRepository;
-import lombok.Data;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;

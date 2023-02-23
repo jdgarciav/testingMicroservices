@@ -56,6 +56,5 @@ class CuentaRepositoryTest {
         Cuenta cuentaGuardada = repository.save(cuenta);
         assertEquals("Daniel", cuentaGuardada.getPersona());
         assertEquals(100000, cuentaGuardada.getSaldo().intValue());
-        //assertEquals(3,cuentaGuardada.getId());
     }
 }

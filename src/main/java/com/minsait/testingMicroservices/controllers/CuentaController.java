@@ -90,45 +90,4 @@ public class CuentaController {
         }
         return ResponseEntity.ok(response);
     }
-
-    //Borrar
-    /*
-    @GetMapping("/Borrar/{id}")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public ResponseEntity<?> deleteById(@PathVariable Long id) {
-        if (service.deleteById(id)){
-            return ResponseEntity.noContent().build();
-        }
-        return ResponseEntity.notFound().build();
-    }
-*/
-    //PROPIOS
-    /*
-    @DeleteMapping("/borrar/{id}")
-    public ResponseEntity<?> borrar(@PathVariable Long id){
-        if(service.deleteById(id)){
-            return ResponseEntity.noContent().build();
-        }
-        return ResponseEntity.notFound().build();
-    }
-    /*public void borrar(@PathVariable Long id){
-        service.deleteById(id);
-    }
-
-
-
-    //Actualizar
-    @PutMapping("/actualizar/{id}")
-    @ResponseStatus(HttpStatus.OK)
-    public Cuenta actualizar(@PathVariable Long id, @RequestBody Cuenta cuenta){
-        Cuenta cuentaDb = service.findById(id);
-        cuentaDb.setPersona(cuenta.getPersona());
-        cuentaDb.setSaldo(cuenta.getSaldo());
-        return service.save(cuentaDb);
-    }
-
-    //Guardar, Borrar, Actualizar
-
-
-     */
 }
